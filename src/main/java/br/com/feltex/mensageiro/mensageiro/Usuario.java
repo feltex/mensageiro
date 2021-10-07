@@ -1,4 +1,4 @@
-package br.com.feltex.mensageiro.objetos;
+package br.com.feltex.mensageiro.mensageiro;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,7 +1,7 @@
 package br.com.feltex.mensageiro;
 
-import br.com.feltex.mensageiro.objetos.Usuario;
-import br.com.feltex.mensageiro.objetos.UsuarioMensagemConfig;
+import br.com.feltex.mensageiro.mensageiro.Usuario;
+import br.com.feltex.mensageiro.mensageiro.UsuarioMensagemConfig;
 import org.junit.jupiter.api.Test;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;

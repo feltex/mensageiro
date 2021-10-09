@@ -8,14 +8,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class MensageiroApplicationTests {
+class MensageiroApplicationTest {
 
     @Autowired
     private AmqpTemplate rabbitTemplate;
 
     @Test
     public void produzirMensagem() {
-        var usuario = new Usuario("Jose da Silva", "2242-33441", "jose@feltex.com.br");
+        var usuario = new Usuario("Paulo da Silva", "2242-33441", "paulo@feltex.com.br");
         rabbitTemplate.convertAndSend(UsuarioMensagemConfig.NOME_EXCHANGE, UsuarioMensagemConfig.ROUTING_KEY,
                 usuario);
     }
